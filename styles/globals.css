@@ -1,16 +1,14 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
 
-* {
-  box-sizing: border-box;
+.head {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    line-height: 1.5;
+    color: #fff;
+    /* -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #fff; */
 }
