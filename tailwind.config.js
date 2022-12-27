@@ -9,6 +9,9 @@ module.exports = {
       backgroundImage: {
         "hero-bg": "url('/assets/bg.jpg')",
       },
+      fontFamily: {
+        "mono-space": ["Space Mono", "monospace"],
+      },
     },
   },
   plugins: [],
