@@ -17,6 +17,7 @@ const MemoryGame = () => {
     const [choiceOne, setChoiceOne] = useState(null);
     const [choiceTwo, setChoiceTwo] = useState(null);
     const [disabled, setDisabled] = useState(false);
+    const [isWinner, setIsWinner] = useState(false)
 
     // Suffle cards
     const shufffleCards = () => {
@@ -63,6 +64,9 @@ const MemoryGame = () => {
         }
     }, [choiceOne, choiceTwo])
 
+    const checkWinner = () => {
+    }
+
     // Reset turn
     const resetTurn = () => {
         setChoiceOne(null);
@@ -72,7 +76,7 @@ const MemoryGame = () => {
     }
 
     return (
-        <div className='bg-black text-white min-h-screen w-full flex flex-col gap-5 items-center justify-center'>
+        <div className='bg-game-bg bg-no-repeat bg-cover bg-center bg-fixed text-white min-h-screen w-full flex flex-col gap-5 items-center justify-center'>
             <h1 className='text-5xl mt-18'>Magic Match</h1>
             <button onClick={shufffleCards}>New Game</button>
             <div className='grid gap-5 grid-cols-4 content-center'>
@@ -87,6 +91,7 @@ const MemoryGame = () => {
                 ))}
             </div>
             <p>Turns : {turns}</p>
+            <p>You completed game in {turns}</p>
         </div>
     )
 }
